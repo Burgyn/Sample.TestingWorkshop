@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutationTesting", "src\Muta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutationTesting.UnitTests", "tests\MutationTesting.UnitTests\MutationTesting.UnitTests.csproj", "{718B10E7-DF40-4228-A93C-5AD2859BFE0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Domains", "src\Reservation.Domains\Reservation.Domains.csproj", "{6838066F-2CD2-4A5A-B96C-3BB3865265D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{718B10E7-DF40-4228-A93C-5AD2859BFE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{718B10E7-DF40-4228-A93C-5AD2859BFE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{718B10E7-DF40-4228-A93C-5AD2859BFE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6838066F-2CD2-4A5A-B96C-3BB3865265D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6838066F-2CD2-4A5A-B96C-3BB3865265D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6838066F-2CD2-4A5A-B96C-3BB3865265D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6838066F-2CD2-4A5A-B96C-3BB3865265D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
