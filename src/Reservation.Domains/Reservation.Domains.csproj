@@ -10,6 +10,9 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.1.0" />
     <PackageReference Include="Kros.Utils" Version="1.19.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+    <PackageReference Include="StronglyTypedId" Version="0.2.1" />
   </ItemGroup>
 
 </Project>

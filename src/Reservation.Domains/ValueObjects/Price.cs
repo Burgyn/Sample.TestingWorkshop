@@ -2,6 +2,8 @@
 
 public record Price(string Currency, decimal Amount)
 {
+    public static readonly Price Default = new Price("Eur", 0);
+    
     public static Price operator +(Price a, Price b)
     {
         ValidateCurrency(a, b);
@@ -29,7 +31,7 @@ public record Price(string Currency, decimal Amount)
         }
         return new Price(a.Currency, a.Amount / b.Amount);
     }
-    
+
     private static void ValidateCurrency(Price a, Price b)
     {
         if (a.Currency != b.Currency)
