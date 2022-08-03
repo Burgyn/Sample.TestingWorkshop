@@ -8,7 +8,7 @@ namespace Reservation.Domains;
 public interface ICompanyWebNameChecker
 {
     /// <summary>
-    /// Check if exists company whith <paramref name="webName"/>.
+    /// Check if exists company with <paramref name="webName"/>.
     /// </summary>
     /// <param name="webName">Web name of the company.</param>
     /// <returns>
@@ -17,7 +17,7 @@ public interface ICompanyWebNameChecker
     bool ExistWebName(WebName? webName);
 
     /// <summary>
-    /// Check if exists another company whith <paramref name="webName"/>.
+    /// Check if exists another company with <paramref name="webName"/>.
     /// </summary>
     /// <param name="webName">Web name of the company.</param>
     /// <param name="companyId">Current company id.</param>

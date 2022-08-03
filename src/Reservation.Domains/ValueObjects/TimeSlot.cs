@@ -19,12 +19,12 @@ public struct TimeSlot : ITimeSlot
     /// <summary>
     /// From.
     /// </summary>
-    public TimeSpan From { get; set; }
+    public TimeSpan From { get; }
 
     /// <summary>
     /// To.
     /// </summary>
-    public TimeSpan To { get; set; }
+    public TimeSpan To { get; }
 
     /// <summary>
     /// Create.

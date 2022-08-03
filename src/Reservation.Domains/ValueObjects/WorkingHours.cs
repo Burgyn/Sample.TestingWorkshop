@@ -25,12 +25,7 @@ public class WorkingHours : Collection<WorkingHour>
     /// <param name="to">Open to.</param>
     public WorkingHours Add(DayOfWeek dayOfWeek, string from, string to)
     {
-        Add(new WorkingHour()
-        {
-            DayOfWeek = dayOfWeek,
-            From = TimeSpan.Parse(from),
-            To = TimeSpan.Parse(to)
-        });
+        Add(new WorkingHour(dayOfWeek, TimeSpan.Parse(from), TimeSpan.Parse(to)));
 
         return this;
     }

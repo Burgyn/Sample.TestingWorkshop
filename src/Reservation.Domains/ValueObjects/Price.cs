@@ -2,24 +2,24 @@
 
 public record Price(string Currency, decimal Amount)
 {
-    public static readonly Price Default = new Price("Eur", 0);
+    public static readonly Price Default = new("Eur", 0);
     
     public static Price operator +(Price a, Price b)
     {
         ValidateCurrency(a, b);
-        return new Price(a.Currency, a.Amount + b.Amount);
+        return a with { Amount = a.Amount + b.Amount };
     }
     
     public static Price operator -(Price a, Price b)
     {
         ValidateCurrency(a, b);
-        return new Price(a.Currency, a.Amount - b.Amount);
+        return a with { Amount = a.Amount - b.Amount };
     }
     
     public static Price operator *(Price a, Price b)
     {
         ValidateCurrency(a, b);
-        return new Price(a.Currency, a.Amount * b.Amount);
+        return a with { Amount = a.Amount * b.Amount };
     }
     
     public static Price operator /(Price a, Price b)
@@ -29,7 +29,7 @@ public record Price(string Currency, decimal Amount)
         {
             throw new DivideByZeroException();
         }
-        return new Price(a.Currency, a.Amount / b.Amount);
+        return a with { Amount = a.Amount / b.Amount };
     }
 
     private static void ValidateCurrency(Price a, Price b)
