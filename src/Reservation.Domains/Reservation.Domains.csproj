@@ -16,4 +16,11 @@
     <PackageReference Include="StronglyTypedId" Version="0.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="SqlScripts\20220810001_CreateCompanies.sql" />
+    <EmbeddedResource Include="SqlScripts\20220810001_CreateCompanies.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

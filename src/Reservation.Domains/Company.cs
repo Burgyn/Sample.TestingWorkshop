@@ -109,7 +109,7 @@ public class Company
         => throw new CompanyAlreadyExistException("Company with web name '{0}' already exist.".Format(name));
 }
 
-[StronglyTypedId]
+[StronglyTypedId(jsonConverter: StronglyTypedIdJsonConverter.SystemTextJson)]
 public partial struct CompanyId
 {
 }

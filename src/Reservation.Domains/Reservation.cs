@@ -159,7 +159,7 @@ public class Reservation : EntityBase
     }
 }
 
-[StronglyTypedId]
+[StronglyTypedId(jsonConverter: StronglyTypedIdJsonConverter.SystemTextJson)]
 public partial struct ReservationId
 {
 }

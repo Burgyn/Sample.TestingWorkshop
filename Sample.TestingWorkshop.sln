@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutationTesting.UnitTests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Domains", "src\Reservation.Domains\Reservation.Domains.csproj", "{6838066F-2CD2-4A5A-B96C-3BB3865265D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Api", "src\Reservation.Api\Reservation.Api.csproj", "{18304DEB-C085-411D-9B05-BEE650E66889}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6838066F-2CD2-4A5A-B96C-3BB3865265D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6838066F-2CD2-4A5A-B96C-3BB3865265D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6838066F-2CD2-4A5A-B96C-3BB3865265D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18304DEB-C085-411D-9B05-BEE650E66889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18304DEB-C085-411D-9B05-BEE650E66889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18304DEB-C085-411D-9B05-BEE650E66889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18304DEB-C085-411D-9B05-BEE650E66889}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

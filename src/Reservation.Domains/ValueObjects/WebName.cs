@@ -13,7 +13,7 @@ public record WebName
     /// <param name="name">The name.</param>
     public WebName(string name)
     {
-        if (string.IsNullOrEmpty(name))
+        if (!string.IsNullOrEmpty(name))
         {
             Name = Normalize(name);
             WasModified = string.Compare(name, Name, StringComparison.Ordinal) != 0;
